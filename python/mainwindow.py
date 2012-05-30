@@ -893,7 +893,8 @@ class PlayOnLinuxApp(wx.App):
 		#sys.exit()
 		self.BringWindowToFront()
 
-lng.Lang()
-app = PlayOnLinuxApp(redirect=False)
-app.MainLoop()
-#sys.exit(0)
+if __name__ == "__main__":	
+	lng.Lang()
+	app = PlayOnLinuxApp(redirect=False)
+	app.MainLoop()
+	#sys.exit(0)
